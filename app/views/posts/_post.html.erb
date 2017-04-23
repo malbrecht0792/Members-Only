@@ -1,0 +1,7 @@
+<li>
+	<% if logged_in? %>
+		<h4>Author: <%= User.find(post.user_id).name %></h4> 
+	<% end %>
+	<h5>Title: <%= post.title %></h5>
+	<%= post.body %>
+</li>
